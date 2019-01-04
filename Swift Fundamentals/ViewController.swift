@@ -11,21 +11,34 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myFirstLabel: UILabel!
+    @IBOutlet weak var totalTextfield: UITextField!
+    @IBOutlet weak var tipTextfield: UITextField!
+    
     var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = UIColor.green
         myFirstLabel.text  = "It's becoming interesting..."
     }
 
     @IBAction func buttonTap(_ sender: Any) {
+        
+        var total = Double(totalTextfield.text!)!
+        var tipPercentage = Double(tipTextfield.text!)! / 100.0
+        
+        var tip = total * tipPercentage
+        
+        myFirstLabel.text = "$\(tip)"
+        /*
         count += 1
     
         myFirstLabel.text = String(count)
         if count >= 10 {
             view.backgroundColor = UIColor.yellow
         }
+         
+        
+        */
     }
     
 }

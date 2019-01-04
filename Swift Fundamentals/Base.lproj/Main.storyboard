@@ -31,6 +31,24 @@
                                     <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saX-Fc-Z9Q"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip Ex. 15" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIi-Dz-lei">
+                                <rect key="frame" x="112.5" y="285" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="bNK-G5-AJa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Ex. 107.56" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aag-pZ-dmZ">
+                                <rect key="frame" x="112.5" y="247" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0CZ-m1-mxJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -38,19 +56,27 @@
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7gc-Y2-CE8"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7to-lo-lhy"/>
                             <constraint firstItem="Xxi-UO-hdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7x5-h5-Kx5"/>
+                            <constraint firstItem="aag-pZ-dmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Gh-ZQ-jEs"/>
+                            <constraint firstItem="hIi-Dz-lei" firstAttribute="top" secondItem="aag-pZ-dmZ" secondAttribute="bottom" constant="8" id="C1y-U0-MGH"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I4s-61-abX"/>
+                            <constraint firstItem="aag-pZ-dmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JO4-z8-rrO"/>
                             <constraint firstItem="Xxi-UO-hdd" firstAttribute="top" secondItem="RaP-kv-AfN" secondAttribute="bottom" constant="8" id="NV0-zN-MIN"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tk4-JL-VCJ"/>
+                            <constraint firstItem="RaP-kv-AfN" firstAttribute="top" secondItem="hIi-Dz-lei" secondAttribute="bottom" constant="8" id="W7z-4W-0Jj"/>
+                            <constraint firstItem="hIi-Dz-lei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hCm-2c-Zeg"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wj5-Mm-FFm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="myFirstLabel" destination="RaP-kv-AfN" id="4ou-mw-WHL"/>
+                        <outlet property="tipTextfield" destination="hIi-Dz-lei" id="KGG-qm-shg"/>
+                        <outlet property="totalTextfield" destination="aag-pZ-dmZ" id="jMJ-9Q-g0a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-63" y="132"/>
         </scene>
     </scenes>
 </document>
