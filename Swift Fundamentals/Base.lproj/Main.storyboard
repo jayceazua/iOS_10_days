@@ -24,14 +24,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxi-UO-hdd">
+                                <rect key="frame" x="142" y="352" width="91" height="30"/>
+                                <state key="normal" title="Change Text!"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="saX-Fc-Z9Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RaP-kv-AfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0D4-H5-Fb5"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7gc-Y2-CE8"/>
+                            <constraint firstItem="RaP-kv-AfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7to-lo-lhy"/>
+                            <constraint firstItem="Xxi-UO-hdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7x5-h5-Kx5"/>
+                            <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I4s-61-abX"/>
+                            <constraint firstItem="Xxi-UO-hdd" firstAttribute="top" secondItem="RaP-kv-AfN" secondAttribute="bottom" constant="8" id="NV0-zN-MIN"/>
                             <constraint firstItem="RaP-kv-AfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tk4-JL-VCJ"/>
+                            <constraint firstItem="RaP-kv-AfN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wj5-Mm-FFm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myFirstLabel" destination="RaP-kv-AfN" id="4ou-mw-WHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
