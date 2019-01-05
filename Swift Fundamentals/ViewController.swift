@@ -23,15 +23,23 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTap(_ sender: Any) {
         
-        let total = Double(totalTextfield.text!)!
-        let tipPercentage = Double(tipTextfield.text!)! / 100.0
-        let tip = total * tipPercentage
-        
-        if tip > 50.0 {
-            myFirstLabel.text = "Tip: $\(tip) ⁉️"
-        } else {
-            myFirstLabel.text = "Tip: $\(tip)"
+        if let totalText = totalTextfield.text {
+            if let total = Double(totalText) {
+                if let tipText = tipTextfield.text {
+                    if let tipPercentage = Double(tipText) {
+                        let tip = total * tipPercentage / 100.0
+                        
+                        if tip > 50.0 {
+                            myFirstLabel.text = "Tip: $\(tip) ⁉️"
+                        } else {
+                            myFirstLabel.text = "Tip: $\(tip)"
+                        }
+                    }
+                }
+            }
         }
+        
+
         
         /*
         count += 1
